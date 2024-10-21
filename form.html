@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+display: flex;
+   
+            
+            justify-content: center;
+            align-items: center;
+            
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+    
+            text-transform: uppercase;
+            text-align: center;
+    
+        }
+
+
+        form {
+            width: 300px;
+            
+        }
+
+        input:focus{
+           background-color:black; 
+        }
+        input, textarea {
+            outline: none;
+            background-color:transparent;
+            border: none;
+            border-bottom: 2px solid #777;
+            color: white;
+            padding: 10px 0;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+
+        .button-container {
+            
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+        
+        
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .cancel-button {
+            background-color: #fff;
+            color: #333;
+        }
+        .task a {
+            color: #fff;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form</h1> 
+    
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text"  name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email"  name="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password"  name="password" placeholder="Enter your password">
+
+            <label for="number">Number:</label>
+            <input type="text"  name="number" placeholder="Enter your phone number">
+
+            <label for="message">Message:</label>
+            <textarea  name="message" rows="4" placeholder="Enter your message"></textarea>
+
+            <div class="button-container">
+                <button type="submit" class="submit-button">SUBMIT</button>
+                <button type="reset" class="cancel-button">CANCEL</button>
+            
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="task">
+    <ul>
+     
+        <li><a href="index.html">Back</a></li>
+        </ul>
+        </div>
+    
+</body>
+</html>
